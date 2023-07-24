@@ -1,14 +1,19 @@
-const $ = () => document.querySelector.call(this, arguments);
-const $$ = () => document.querySelectorAll.call(this, arguments);
-
-HTMLElement.prototype.on = (a, b, c) => this.addEventListener(a, b, c);
-HTMLElement.prototype.on = (a, b) => this.removeEventListener(a, b);
-HTMLElement.prototype.$ = (s) => this.querySelector(s);
-HTMLElement.prototype.$ = (s) => this.querySelectorAll(s);
-
 window.addEventListener("DOMContentLoaded", () => {
-  console.log("DOM is ready");
-});
+  let nav = document.querySelector("header");
+  
+  const $ = () => document.querySelector.call(this, arguments);
+  const $$ = () => document.querySelectorAll.call(this, arguments);
+
+  HTMLElement.prototype.on = (a, b, c) => this.addEventListener(a, b, c);
+  HTMLElement.prototype.on = (a, b) => this.removeEventListener(a, b);
+  HTMLElement.prototype.$ = (s) => this.querySelector(s);
+  HTMLElement.prototype.$ = (s) => this.querySelectorAll(s);
+
+  window.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM is ready");
+  });
+})
+
 // const elem = document.querySelector('#tempID')
 // const contents = elem.innerHTML;
 
