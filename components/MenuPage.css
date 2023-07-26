@@ -4,8 +4,8 @@ ul {
 }
 
 h3 {
-    background-color: var(--color3);
-    color: var(--color4);
+    /* background-color: var(--color3); */
+    color: var(--color3);
     font-weight: normal;
     padding-top: 15px;
     font-size: 17px;
